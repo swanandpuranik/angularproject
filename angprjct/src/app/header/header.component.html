@@ -1,0 +1,50 @@
+<div class="container" >
+  
+        <!-- header is the first item for the container-->
+        <div class="header">
+                    <div class="item1">
+                      
+                      <mat-icon>notifications</mat-icon>
+                    </div>
+                    <div class="item2">
+                    <input type="text" placeholder="search" >    
+                          
+                    </div>
+                    <div class="item3">
+                        <label >Online Training</label>
+                              
+                        </div>
+                      <div class="icon">
+                        <button mat-icon-button [matMenuTriggerFor]="clickHoverMenu" 
+                        #clickHoverMenuTrigger="matMenuTrigger" (mouseover)="openOnMouseOver()">
+                        <mat-icon>account_circle</mat-icon>
+                      <mat-menu #clickHoverMenu="matMenu">
+                          <mat-list dense>
+                              <mat-list-item> Messages </mat-list-item>
+                              <mat-list-item> Purchase  histroy </mat-list-item>
+                              <mat-list-item>  Account </mat-list-item>
+                              <mat-list-item>  Payment Methods </mat-list-item>
+                              <mat-list-item>  Help </mat-list-item>
+                              <mat-list-item>  Logout </mat-list-item>
+                              <mat-list-item>  userInfo </mat-list-item>
+                            </mat-list>
+                            
+                      </mat-menu>
+                      </button>
+                                
+                          </div> 
+      
+              </div>
+      
+              <div>
+                <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        
+        
+      </mat-card></div>
+      </div>
