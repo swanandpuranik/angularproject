@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,8 +13,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  greetMe(){
-    alert('hi')
+  public submit(){
     this.route.navigateByUrl('\welcome')
   }
 

@@ -13,7 +13,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatMenuModule} from '@angular/material/menu';
 import { HeaderComponent } from './header/header.component';
 import {MatListModule} from '@angular/material/list';
-
+import { WelcomeComponent } from './welcome/welcome.component';
+import {RouterModule } from '@angular/router'; 
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {MatListModule} from '@angular/material/list';
     LoginComponent,
     CalcComponent,
     FlexboxComponent,
-    HeaderComponent
+    HeaderComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import {MatListModule} from '@angular/material/list';
     MatTooltipModule,
     MatSelectModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    RouterModule.forRoot([{path:'',component:LoginComponent},{path:'welcom',component:WelcomeComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]
